@@ -3,8 +3,7 @@ class Bootstrap {
 
     public function __construct()
     {
-        //Getting the URL params as array where $url[0] is a controller name
-        // and $url[1] is a controller method
+        //Getting the URL params as array where $url[0] is a controller name and $url[1] is a controller method
         if ($_GET['url'] == NULL) {
             $url = explode('/', env('defaultRoute'));
         } else {
